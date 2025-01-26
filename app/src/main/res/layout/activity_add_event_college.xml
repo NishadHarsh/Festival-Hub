@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/add_event_college_college"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/add_event_college_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_border"
+                android:hint="Event Name"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/add_event_college_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_border"
+                android:hint="Price"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/add_event_college_max_allowed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_border"
+                android:hint="Max. No. Of Team Member"
+                android:inputType="number"
+                android:maxLength="2"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/add_event_college_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_border"
+                android:drawableRight="@drawable/calendar_24"
+                android:editable="false"
+                android:hint="Event Date"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/add_event_college_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_border"
+                android:drawableRight="@drawable/clock_24"
+                android:editable="false"
+                android:hint="Event Time"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/add_event_college_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_border"
+                android:gravity="start"
+                android:hint="Rules/Description"
+                android:maxLines="6"
+                android:minLines="4"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/add_event_college_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button"
+                android:text="Submit"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_volunteer"
+            android:icon="@drawable/home_drawer"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_college_map_volunteer"
+            android:icon="@drawable/map"
+            android:title="College Map" />
+        <item
+            android:id="@+id/nav_order_history_volunteer"
+            android:icon="@drawable/order_history"
+            android:title="Event Registered History" />
+        <item
+            android:id="@+id/nav_scan_volunteer"
+            android:icon="@drawable/ic_qr_code"
+            android:title="Scan" />
+        <item
+            android:id="@+id/nav_report_volunteer"
+            android:icon="@drawable/ic_qr_code"
+            android:title="Reports" />
+        <item
+            android:id="@+id/nav_notification_volunteer"
+            android:icon="@drawable/notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/nav_profile_volunteer"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_change_password_volunteer"
+            android:icon="@drawable/pswd"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_logout_volunteer"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

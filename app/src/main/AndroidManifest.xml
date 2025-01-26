@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.event.management">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EventManagement"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,android:usesCleartextTraffic">
+        <activity android:name=".RegisterGameNameActivity"></activity>
+        <activity
+            android:name=".IntroductionActivity"
+            android:theme="@style/Theme.EventManagement.NoActionBar" />
+        <activity android:name=".AddNotificationActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity
+            android:label="Report"
+            android:name=".ReportsActivity"
+            android:theme="@style/Theme.EventManagement.NoActionBar" />
+        <activity
+            android:name=".Change_password"
+            android:theme="@style/Theme.EventManagement.NoActionBar" />
+        <activity
+            android:name=".Forgot_password"
+            android:theme="@style/Theme.EventManagement.NoActionBar" />
+        <activity
+            android:name=".ScanActivity"
+            android:theme="@style/Theme.EventManagement.NoActionBar" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".VolunteerNavigationActivity"
+            android:label="Home"
+            android:theme="@style/Theme.EventManagement.NoActionBar" />
+        <activity
+            android:name=".DashboardNavigationActivity"
+            android:label="Home"
+            android:theme="@style/Theme.EventManagement.NoActionBar" />
+        <activity android:name=".EventHistoryActivity" />
+        <activity android:name=".AddEventCollegeActivity" />
+        <activity android:name=".EventCollegeListActivity" />
+        <activity android:name=".AddEventActivity" />
+        <activity android:name=".EventListActivity" />
+        <activity android:name=".AdminUserListActivity" />
+        <activity android:name=".AddCollegeActivity" />
+        <activity android:name=".CollegeListActivity" />
+        <activity android:name=".AdminHomeActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".notifications.MyFirebaseMessagingService"
+            android:permission="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".notifications.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_74utptkC3udUY5" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/off_white_dark" />
+    </application>
+
+</manifest>
